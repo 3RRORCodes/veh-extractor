@@ -1,52 +1,50 @@
-# Vehicle Extractor
+# Vehicle Extractor (WIP)
 
-This script is designed to extract and categorize vehicle folders based on their names into specific categories (police, EMS, fire, or others) and generate output in Lua format. It was created for personal use to suit specific needs, so it might not work perfectly for others unless you have similar requirements. You are free to use or modify it as needed.
+This tool is made for **FiveM** server developers. It helps with organizing vehicle data by scanning folders, identifying vehicles, and categorizing them based on their names. It is still a **work in progress** (WIP), and more features will be added soon!
 
-## How to Install and Run
+---
+
+## What It Does
+- Scans a folder of vehicles and organizes them into categories like police, EMS, fire, and others.
+- Generates Lua files with the categorized vehicle data.
+- Useful for creating organized vehicle data for your FiveM server.
+
+---
+
+## How to Use
 
 ### Prerequisites
-- **Python**: Ensure Python is installed on your system. If not, follow these steps to install it:
+- **Python**: Make sure Python is installed. If not:
+  1. Download Python from [python.org](https://www.python.org/downloads/).
+  2. Install it and check the option to add Python to your PATH.
 
-  1. Download Python from the [official Python website](https://www.python.org/downloads/).
-  2. Run the installer and select the option to add Python to your PATH.
-  3. Complete the installation process.
+### Steps
+1. Place the script (`vehicle_extractor.py`) and the batch file (`run.bat`) in a folder.
+2. Add your vehicle folders into a directory.
+3. Run the batch file or use this command in the terminal:
+   ```bash
+   python vehicle_extractor.py <path-to-your-vehicle-directory>
+   ```
+   Replace `<path-to-your-vehicle-directory>` with the folder where your vehicle files are stored.
+4. The output will be saved in an `output` folder created by the script.
 
-- **Required Files**:
-  - `vehicle_extractor.py`
-  - `run.bat`
+---
 
-### Installation and Usage
+## TODO Features (Coming Soon!)
+- Extract vehicle names from model files.
+- Extract data from `.meta` files.
+- Create framework-ready vehicle data for:
+  - QBCore
+  - QBX
+  - ESX
 
-1. Clone or download this repository to your local machine.
-2. Place all your vehicle folders in a single directory.
-3. Run the script:
-   - Open the command line and navigate to the folder containing the files.
-   - Execute the `run.bat` file or directly run the script with the following command:
-     ```bash
-     python vehicle_extractor.py <path-to-your-vehicle-directory>
-     ```
-   Replace `<path-to-your-vehicle-directory>` with the full path to the directory containing your vehicle folders.
+---
 
-### Output
-The script generates:
-- Categorized vehicle files in Lua format.
-- Output files are saved in the `output` folder created in the same directory as the script.
+## Important Notes
+- This script was made for personal use based on specific needs. Others are free to use it, but it might not work perfectly for everyone.
+- It’s still a work in progress, so expect improvements and new features over time!
 
-### Input/Output Examples
-You can visualize the script's functionality with the following images:
-
-#### Input Example
-![image](https://github.com/user-attachments/assets/a0ce3234-9ce3-406c-a2da-cffb09511421)
-
-#### Output Example
-![image](https://github.com/user-attachments/assets/aa811cce-b482-4e18-8451-a0d8b1ccbf1f)
-
-Replace `path/to/your/input-image.png` and `path/to/your/output-image.png` with the actual file paths of your example images.
-
-### Notes
-- The script processes folder names and categorizes them based on predefined patterns (e.g., "police", "ems").
-- If errors occur during processing, they will be logged in the console.
-- This script was tailored to specific requirements, so it may need adjustments for other use cases.
+---
 
 ## Disclaimer
-This script was made for personal use. While others are free to use and modify it, it may not work out-of-the-box for different requirements or setups.
+This script is made for **personal use** and designed with specific requirements in mind. While anyone can use or modify it, some adjustments may be needed to suit different needs.
