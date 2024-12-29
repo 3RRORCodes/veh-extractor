@@ -1,6 +1,6 @@
 # Vehicle Extractor
 
-This script is designed to categorize vehicle folders based on their names into specific categories (police, EMS, fire, or others) and generate output in Lua format. It was created for personal use to suit specific needs, so it might not work perfectly for others unless you have similar requirements. You are free to use or modify it as needed.
+This script is designed to extract and categorize vehicle folders based on their names into specific categories (police, EMS, fire, or others) and generate output in Lua format. It was created for personal use to suit specific needs, so it might not work perfectly for others unless you have similar requirements. You are free to use or modify it as needed.
 
 ## How to Install and Run
 
@@ -31,6 +31,17 @@ This script is designed to categorize vehicle folders based on their names into 
 The script generates:
 - Categorized vehicle files in Lua format.
 - Output files are saved in the `output` folder created in the same directory as the script.
+
+### Input/Output Examples
+You can visualize the script's functionality with the following images:
+
+#### Input Example
+![image](https://github.com/user-attachments/assets/a0ce3234-9ce3-406c-a2da-cffb09511421)
+
+#### Output Example
+![image](https://github.com/user-attachments/assets/aa811cce-b482-4e18-8451-a0d8b1ccbf1f)
+
+Replace `path/to/your/input-image.png` and `path/to/your/output-image.png` with the actual file paths of your example images.
 
 ### Notes
 - The script processes folder names and categorizes them based on predefined patterns (e.g., "police", "ems").
